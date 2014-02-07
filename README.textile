@@ -1,5 +1,0 @@
-h1. VimL (vimscript) syntax highlighting for TextMate
-
-Terribly incomplete. I was too lazy to list all reserved words, built-in functions, etc.
-
-Other than that, it does nice job highlighting vim files.
