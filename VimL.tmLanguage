@@ -48,10 +48,6 @@
 		</dict>
 		<dict>
 			<key>include</key>
-			<string>#function</string>
-		</dict>
-		<dict>
-			<key>include</key>
 			<string>#support_function</string>
 		</dict>
 		<dict>
@@ -69,6 +65,14 @@
 		<dict>
 			<key>include</key>
 			<string>#function_definition</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#function_call</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#function</string>
 		</dict>
 		<dict>
 			<key>include</key>
@@ -125,13 +129,47 @@
 				</dict>
 			</array>
 		</dict>
-		<key>function_definition</key>
+		<key>function_call</key>
 		<dict>
 			<key>patterns</key>
 			<array>
 				<dict>
 					<key>match</key>
-					<string>(([sSgGbBwWtTlL]|)?:?\w+)(?=\()</string>
+					<string>(([sgbwtl]|)?:?[0-9a-zA-Z_#]+)(?=\()</string>
+					<key>name</key>
+					<string>support.function.any-method</string>
+				</dict>
+			</array>
+		</dict>
+		<key>function_definition</key>
+		<dict>
+			<key>begin</key>
+			<string>^\s*(function)\s*!?\s+(?=(s:)?[0-9a-zA-Z_#]+\s*\()</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>storage.function.viml</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(\()</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.parameters.begin.viml</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>meta.function.viml</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>(s:)?[0-9a-zA-Z_#]+</string>
 					<key>name</key>
 					<string>entity.name.function.viml</string>
 				</dict>
