@@ -7,9 +7,9 @@
 		<string>vim</string>
 	</array>
 	<key>foldingStartMarker</key>
-	<string>^(if|while|for|fu|function|augroup|aug)</string>
+	<string>^(if|while|for|fu|function|try|augroup|aug)</string>
 	<key>foldingStopMarker</key>
-	<string>(endif|endwhile|endfor|endf|endfunction|augroup\.END|aug\.END)$</string>
+	<string>(endif|endwhile|endfor|endf|endfunction|endtry|augroup\.END|aug\.END)$</string>
 	<key>name</key>
 	<string>VimL</string>
 	<key>patterns</key>
@@ -213,7 +213,7 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\b(if|while|for|return|end(if|for|while)?|au(g|group)|else(if|)?|do|in|:)\b</string>
+					<string>\b(if|while|for|try|return|throw|end(if|for|while|try)?|au(g|group)|else(if|)?|do|in|catch|finally|:)\b</string>
 					<key>name</key>
 					<string>keyword.control.viml</string>
 				</dict>
