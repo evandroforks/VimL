@@ -285,7 +285,7 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\b(set(local|global)?|let|command|filetype|colorscheme|\w*map|syn|exe(c|cute)?|ec(ho|)?|au(tocmd|)?)\b</string>
+					<string>\b(set(local|global)?|let|command|filetype|colorscheme|\w*map|\w*a(b|brev)?|syn|exe(c|cute)?|ec(ho|)?|au(tocmd|)?)\b</string>
 					<key>name</key>
 					<string>support.function.viml</string>
 				</dict>
