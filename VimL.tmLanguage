@@ -6,6 +6,7 @@
 	<array>
 		<string>vim</string>
 		<string>.vimrc</string>
+		<string>.gvimrc</string>
 	</array>
 	<key>foldingStartMarker</key>
 	<string>^(if|while|for|fu|function|try|augroup|aug)</string>
