@@ -50,6 +50,7 @@ VimL Package for Sublime Text, based on [VimL.tmbundle](https://github.com/skamm
    search for **`VimL`** and press <kbd>Enter</kbd>
 
 See also:
+
 1. [ITE - Integrated Toolset Environment](https://github.com/evandrocoan/ITE)
 1. [Package control docs](https://packagecontrol.io/docs/usage) for details.
 
