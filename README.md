@@ -44,7 +44,8 @@ VimL Package for Sublime Text, based on [VimL.tmbundle](https://github.com/skamm
       you will not install this forked version of the package,
       but the original available on the Package Control default channel **`https://packagecontrol.io...`**
     > [!WARNING]
-    > Placing this custom channel before the default channel changes Package Control's resolution globally. Packages from this channel with the same name will override versions from the default channel.
+    > Placing this custom channel before the default channel changes Package Control's resolution globally.
+    > Packages from this channel with the same name will override versions from the default channel.
     >
     > You can review the channel contents here:
     > https://raw.githubusercontent.com/evandrocoan/StudioChannel/master/channel.json
